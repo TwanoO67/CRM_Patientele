@@ -1,0 +1,50 @@
+@extends('layouts.default')
+
+@section('content')
+<h2 class="featurette-heading">
+    {{$patho->titre}} 
+    @if( $patho->sous_titre != '')
+        <br/><span class="text-muted">{{$patho->sous_titre}}</span>
+    @endif
+</h2>    
+<br/>
+<p>
+    {{$patho->texte}}
+</p>
+<br/>
+<br/>
+<div class='col-md-6'>
+    <blockquote><p><i class="fa fa-quote-left fa-2x pull-left"></i>Et là par exemple je raconte ma vie car elle est trés trés dur...<i class="fa fa-quote-right fa-2x pull-right"></i></p><p><small>Antoine Weber</small></p></blockquote>
+</div>
+
+<div class='col-md-6'>
+    <blockquote><p><i class="fa fa-quote-left fa-2x pull-left"></i>Mais moi aussi! tout pareil! Enfin bon sauf que moi mon histoire elle est quand même un peu plus longue. parce que depuis que je suis petit il m'arrive des trucs vraiment géniaux!<i class="fa fa-quote-right fa-2x pull-right"></i></p><p><small>Antoine Weber</small></p></blockquote>
+</div>
+
+<!-- START THE FEATURETTES -->
+  @foreach( $featurets as $key=>$featuret)
+      <hr class="featurette-divider">
+      
+      <div class="row featurette">
+      
+        @if( ($key%2) == 0  )
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive" src="{{$featuret->image}}" alt="">
+            </div>
+        @endif
+    
+        <div class="col-md-7">
+          <h2 class="featurette-heading">{{$featuret->titre}} <span class="text-muted">{{$featuret->sous_titre}}</span></h2>
+          <p class="lead">{{$featuret->texte}}</p>
+        </div>
+        
+        @if( ($key%2) != 0  )
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive" src="{{$featuret->image}}" alt="">
+            </div>
+        @endif
+      </div>
+  @endforeach
+ <!-- /END THE FEATURETTES -->
+
+@stop

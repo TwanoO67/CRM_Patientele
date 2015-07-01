@@ -1,0 +1,38 @@
+toinou67@gmail.com  test
+
+backend.patient.show   regler le positionnement des module half
+
+page de paramétre
+    -modifier les tarifs
+    -moyen de paiement (impayé, cash, cb, paypal etc..)
+    -les lieux ( domicile, cabinet, exterieur, à distance)
+    -nb de visite du site
+    - repartition mobile / web (comme sur chartbeat )
+    - facon de connaitre le cabinet ( bouche à oreille, pub, internet etc...)
+    - sauvegarde de la base?
+    
+ modification des comptes users et changement de mot de passe
+
+ajouter la recherche dans le menu et l'onglet patient
+
+controle des erreurs sur la création de patients
+
+ajouter les graph:
+    -chiffre d'affaire par semaine
+    -nb de séance / par patient
+    -nb de séance / pathologie
+    -piramide des age
+    -repartition des moyens de paiements
+    
+
+    
+gestion de formulaire sondage (base de reponse, id_patient, id_questionnaire, meta_reponse)
+    
+gestion de document? (fichier joint, titre, description)
+
+ajout de document lié au patient en drag'n'drop
+
+cryptage des données
+
+
+archivage des patient (pour ne pas ressortir les vieux patient tout le temps)
